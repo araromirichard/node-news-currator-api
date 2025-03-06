@@ -10,7 +10,7 @@ This repository contains the implementation of a RESTful API for a news curator 
   - `POST /api/v1/articles`: Create a new article with title, content, and URL.
   - `POST /api/v1/articles/:id/click`: Record a click on a specific article.
 
-- **Data Storage**: Utilizes MySQL with an ORM for managing database connections.
+- **Data Storage**: Utilizes MySQL with an ORM(Prisma) for managing database connections.
 
 
 ## Installation
