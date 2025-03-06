@@ -1,0 +1,19 @@
+// Prisma schema
+generator client {
+  provider = "prisma-client-js" 
+}
+
+datasource db {
+  provider = "mysql"
+  url      = env("DATABASE_URL")
+}
+
+
+model Article {
+  id Int @id @default(autoincrement())
+  title String
+  content String
+  url String @unique
+  views Int @default(0)
+  clicks Int @default(0)
+}
